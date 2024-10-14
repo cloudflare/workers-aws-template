@@ -1,6 +1,6 @@
-const { DynamoDBClient, GetItemCommand, PutItemCommand } = require("@aws-sdk/client-dynamodb");
-const { SQSClient, SendMessageCommand } = require("@aws-sdk/client-sqs");
-const { RDSDataClient, ExecuteStatementCommand } = require("@aws-sdk/client-rds-data");
+import { DynamoDBClient, GetItemCommand, PutItemCommand } from "@aws-sdk/client-dynamodb";
+import { SQSClient, SendMessageCommand } from "@aws-sdk/client-sqs";
+import { RDSDataClient, ExecuteStatementCommand } from "@aws-sdk/client-rds-data";
 
 
 addEventListener('fetch', event => {
